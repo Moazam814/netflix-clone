@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar">
+    <div class="logo">NETFLIX</div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#tvshows">TV Shows</a>
+      <a href="#movies">Movies</a>
+      <button class="login-btn" onclick="toggleLogin()">Login</button>
+    </nav>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Unlimited movies, TV shows, and more.</h1>
+      <p>Watch anywhere. Cancel anytime.</p>
+      <button class="cta-btn">Get Started</button>
+    </div>
+  </section>
+
+  <!-- ===== Features Section ===== -->
+  <section class="features" id="features">
+    <h2>Why Choose Netflix?</h2>
+    <ul class="feature-list">
+      <li>Stream on any device</li>
+      <li>Download and watch offline</li>
+      <li>Family-friendly profiles</li>
+      <li>Cancel anytime, no commitments</li>
+    </ul>
+  </section>
+
+  <!-- ===== TV Shows Section ===== -->
+  <section class="tvshows" id="tvshows">
+    <h2>Top TV Shows</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/tv1.jpg" alt="TV Show 1" />
+        <p>TV Show 1</p>
+        <button onclick="addToList('1')">Add to My List</button>
+      </div>
+      <div class="card">
+        <img src="images/tv2.jpg" alt="TV Show 2" />
+        <p>TV Show 2</p>
+        <button onclick="addToList('2')">Add to My List</button>
+      </div>
+      <div class="card">
+        <img src="images/tv3.jpg" alt="TV Show 3" />
+        <p>TV Show 3</p>
+        <button onclick="addToList('3')">Add to My List</button>
+      </div>
+      <div class="card">
+        <img src="images/tv4.jpg" alt="TV Show 4" />
+        <p>TV Show 4</p>
+        <button onclick="addToList('4')">Add to My List</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Movies Section ===== -->
+  <section class="movies" id="movies">
+    <h2>Popular Movies</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="images/movie 1.jpg" alt="Movie 1" />
+        <p>Movie 1</p>
+        <button onclick="addToList('5')">Add to My List</button>
+      </div>
+      <div class="card">
+        <img src="images/movie2.jpg" alt="Movie 2" />
+        <p>Movie 2</p>
+        <button onclick="addToList('2')">Add to My List</button>
+      </div>
+      <div class="card">
+        <img src="images/movie3.jpg" alt="Movie 3" />
+        <p>Movie 3</p>
+        <button onclick="addToList('3')">Add to My List</button>
+      </div>
+      <div class="card">
+        <img src="images/movie4.jpg" alt="Movie 4" />
+        <p>Movie 4</p>
+        <button onclick="addToList('4')">Add to My List</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Login Modal ===== -->
+  <div class="login-modal" id="loginModal">
+    <div class="login-box">
+      <span class="close" onclick="toggleLogin()">&times;</span>
+      <h2>Login</h2>
+      <input type="email" placeholder="Email" />
+      <input type="password" placeholder="Password" />
+      <button class="login-submit">Login</button>
+    </div>
+  </div>
+
+  <!-- ===== Scripts ===== -->
+  <script src="script.js"></script>
+</body>
+</html>
